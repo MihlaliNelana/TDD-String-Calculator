@@ -7,7 +7,8 @@ function StringCalculator(){
           {
               throw Error('Negative numbers are not allowed');
           }
- 
+          
+          // replace comma
           numbers = this.number.replace(/(\;|\]|\%|\*|\/|\[|\r\n|\n|\r)/gm, ",");
           if (numbers == '') {  
               return 0;
