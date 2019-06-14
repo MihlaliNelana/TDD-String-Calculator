@@ -18,7 +18,7 @@ describe("String Calculator",  function(){
     sum = res.reduce((pv, cv) => pv+cv, 0);
     // convert the array to a string
     arg = res.join();
-    //expect arfuments passed to be sum
+    //expect arguments passed to be sum
     expect(calculator.add(arg)).toEqual(sum);
   });
 
